@@ -1,6 +1,6 @@
 const pickr = Pickr.create({
     el: '.color-picker',
-    theme: 'classic', // or 'monolith', or 'nano'
+    theme: 'classic'
 
     swatches: [
         'rgba(244, 67, 54, 1)',
