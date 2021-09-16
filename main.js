@@ -13,4 +13,5 @@ function changeRange() {
   document.getElementById("Blabel").innerText = b;
 
   document.querySelector("#square").style.backgroundColor = RGB;
+  
 }
