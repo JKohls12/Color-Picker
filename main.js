@@ -4,8 +4,9 @@ function changeRange() {
   var b = parseInt(document.getElementById("B").value);
   var colorpicker = document.querySelector("colorpicker");
   
-  var RGB = r + ", " + g + ", " + b;
+  var RGB = "rgb(" + r + ", " + g + ", " + b + ")";
   var color = "(" + 1/r + ", " + 1/g + ", " + 1/b + ")";
+  
   
   colorpicker = RGB;
 }
