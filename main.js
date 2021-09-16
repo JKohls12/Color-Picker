@@ -2,9 +2,10 @@ function changeRange() {
   var r = parseInt(document.getElementById("R").value);
   var g = parseInt(document.getElementById("G").value);
   var b = parseInt(document.getElementById("B").value);
+  var equation = (1/(r+g+b));
   
   var RGB = "rgb(" + r + ", " + g + ", " + b + ")";
-  var color = "(" + ((1 / r)*r) + ", " + ((1 / g)*g) + ", " + ((1 / b)*b) + ")";
+  var color = "(" + Math.round((equation*r)*100) / 100 + ", " + Math.round((equation*g)* 100) / 100 + ", " + Math.round((equation*b) * 100) / 100 + ")";
   
   document.getElementById("hues-label").innerText = color
   document.getElementById("R").innerText = r
