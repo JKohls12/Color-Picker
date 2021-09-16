@@ -1,8 +1,11 @@
-let colorInput = document.querySelector('#color');
-let RGBInput = document.querySelector('#RGB');
-
-colorInput.addEventListener('input', () => {
-  let color = colorInput.value;
-  RGBInput.value = color;
-  //document.body.style.backgroundColor = color;
-});
+function changeRange() {
+  var r = parseInt(document.getElementById("R").value);
+  var g = parseInt(document.getElementById("G").value);
+  var b = parseInt(document.getElementById("B").value);
+  var colorpicker = document.querySelector("colorpicker");
+  
+  var RGB = r + ", " + g + ", " + b;
+  var color = "(" + 1/r + ", " + 1/g + ", " + 1/b + ")";
+  
+  colorpicker = RGB;
+}
