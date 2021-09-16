@@ -5,7 +5,7 @@ function changeRange() {
   var equation = (1/(r+g+b));
   
   var RGB = "rgb(" + r + ", " + g + ", " + b + ")";
-  var color = "(" + Math.round((equation*r)*100) / 100 + ", " + Math.round((equation*g)* 100) / 100 + ", " + Math.round((equation*b) * 100) / 100 + ")";
+  var color = "(" + Math.round((equation*r)*10) / 10 + ", " + Math.round((equation*g)* 10) / 10 + ", " + Math.round((equation*b) * 10) / 10 + ")";
   
   document.getElementById("hues-label").innerText = color
   document.getElementById("R").innerText = r
