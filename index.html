@@ -12,7 +12,9 @@
 </header>
 
 <div style="text-align: center">
-    <input type="text" id="RGB">
+    <input type="range" min="0" max="255" id="R" onchange="changeRange()">
+    <input type="range" min="0" max="255" id="G" onchange="changeRange()">
+    <input type="range" min="0" max="255" id="B" onchange="changeRange()">
     <input type="color" id="color">
 </div>
     
