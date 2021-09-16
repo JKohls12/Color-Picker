@@ -7,9 +7,10 @@ function changeRange() {
   var RGB = "rgb(" + r + ", " + g + ", " + b + ")";
   var color = "(" + Math.round((equation*r)*10) / 10 + ", " + Math.round((equation*g)* 10) / 10 + ", " + Math.round((equation*b) * 10) / 10 + ")";
   
-  document.getElementById("hues-label").innerText = color
-  document.getElementById("R").innerText = r
-  document.getElementById("G").innerText = g
-  document.getElementById("B").innerText = b
+  document.getElementById("hues-label").innerText = color;
+  document.getElementById("Rlabel").innerText = r;
+  document.getElementById("Glabel").innerText = g;
+  document.getElementById("Blabel").innerText = b;
 
+  document.querySelector("#square").style.backgroundColor = RGB;
 }
