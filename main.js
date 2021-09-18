@@ -8,7 +8,7 @@ function changeRange() {
   var color = "(" + Math.round((equation*r)*10) / 10 + ", " + Math.round((equation*g)* 10) / 10 + ", " + Math.round((equation*b) * 10) / 10 + ")";
   
   document.getElementById("hues-label").innerText = color;
-  document.getElementById("Rlabel").innerText = r;
+  document.getElementById("Rlabel").innerText = r; 
   document.getElementById("Glabel").innerText = g;
   document.getElementById("Blabel").innerText = b;
 
